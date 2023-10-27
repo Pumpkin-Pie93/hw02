@@ -7,8 +7,11 @@
     justify-content: center;
     align-items: flex-end;
     margin-top: 24px;
-    margin-right: 70px;
+    /*margin-right: 70px;*/
     margin-left: 70px;
+    /*position: relative;*/
+
+
 }
 
 .imageAndText {
@@ -17,12 +20,14 @@
     flex-direction: row-reverse;
     /*border: 1px solid green;*/
     align-items: flex-end;
+
 }
 
 .imageAndText img {
     width: 48px;
     height: 48px;
     margin-left: 25px;
+
 }
 
 .text {
@@ -30,18 +35,33 @@
     color: white;
     background-color: #06C;
     border-radius: 10px;
-
+    /*position: relative;*/
 }
 
 .text:after {
-    content: '';
-    display: inline-block;
-    /*position: relative;*/
-    /*border-bottom: 40px solid #0066CCFF;*/
-    /*border-right: 40px solid transparent;*/
-    /*left: 420px;*/
-    /*top: 4px*/
-}
+    /*content: '';*/
+    /*position: absolute;*/
+    /*width: 0;*/
+    /*height: 0;*/
+    /*border: 20px solid transparent;*/
+    /*border-bottom-color: #06C;*/
+    /*border-right-color: rgba(255, 0, 0, 0);*/
+    /*border-top-color: rgba(0, 128, 0, 0);*/
+    /*border-left-color: rgba(0, 0, 255, 0);*/
+    /* right: -369px;*/
+    /*top: 208px;*/
+    /*рабочий вариант, но только для декора, для новых сообщений не применяется*/
+
+  /*  */
+  /*  content: '';*/
+  /*  display: inline-block;*/
+  /*  border: 20px solid transparent;*/
+  /*  border-bottom: 20px solid #06C;*/
+  /*  border-left: 20px solid #06C;*/
+  /*  transform: translate(485px, -40px);*/
+  /*  position: absolute;*/
+  /*  z-index: -1;*/
+  }
 
 .name {
     text-align: right;
@@ -69,7 +89,7 @@
     word-wrap: break-word;
     white-space: pre-wrap;
     margin: 3px 13px 8px 13px;
-
+/*position: relative;*/
 }
 
 .time {
