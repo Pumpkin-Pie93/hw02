@@ -43,8 +43,8 @@ const Stand = () => {
             <div className={s.buttons}>
                 {/*обычная кнопка:*/}
                 <div>
-                    <SuperButton id={'hw4-super-button-default'}>
-                        default
+                    <SuperButton id={'hw4-super-button-default'} className={'default'} >
+                        Дефолтная
                     </SuperButton>
                 </div>
                 {/*красная кнопка:*/}

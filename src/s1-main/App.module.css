@@ -1,6 +1,6 @@
 .App {
     --header_height: 60px;
-    margin: 107px auto 10px auto;
+    margin: 0 auto 10px auto;
     min-width: 1280px;
     display: flex;
     flex-direction: column;

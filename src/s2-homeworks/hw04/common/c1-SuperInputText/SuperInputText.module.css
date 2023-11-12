@@ -2,6 +2,8 @@
 }
 
 .input {
+    outline: #00cc22;
+    border: 1px  solid blueviolet;
 }
 
 .inputWrapper {
@@ -11,10 +13,12 @@
 }
 
 .errorInput {
+    border: 1px solid red;
 }
 
 .errorInput:focus {
 }
 
 .error {
+  color: #cc0000;
 }
