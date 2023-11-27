@@ -1,7 +1,14 @@
 .radio {
+accent-color: black;
+    outline: none;
+    width: 20px;
+    height: 20px;
+    margin-right: 13px;
+
 }
 
 .radio::before {
+    color: black;
 }
 
 
@@ -9,7 +16,24 @@
 }
 
 .label {
+    /*border: 1px solid blueviolet;*/
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 20px;
+    margin-bottom: 13px;
 }
 
 .options {
+    display: flex;
+    flex-direction: column;
+    /*border: 1px solid #e50808;*/
+    justify-content: center;
+    align-items: flex-start;
+    color: #000;
+    font-family: Montserrat,sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }

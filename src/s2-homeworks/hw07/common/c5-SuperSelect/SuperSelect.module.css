@@ -1,4 +1,15 @@
 .select {
+    width: 127px;
+    height: 24px;
+    margin-top: 0px;
+    margin-left: 0;
+    margin-right: 127px;
+    color: #000;
+    font-family: Montserrat,sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .select:focus {
