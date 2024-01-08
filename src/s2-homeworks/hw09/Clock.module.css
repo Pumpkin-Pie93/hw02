@@ -1,14 +1,28 @@
 .buttonsContainer {
+    width: 186px;
+    margin-top: 27px;
+    display: flex;
+    justify-content: space-between;
+    /*border: 1px solid red;*/
+
+    & button {
+        width: 84px;
+        height: 24px;
+    }
 }
 
 .clock {
+    margin-bottom: 200px;
 }
 
 .watch {
+
 }
 
 .watch strong {
 }
 
 .more {
+    /*margin-top: 8px;*/
+    color: rgba(0, 0, 0, 0.5);
 }
