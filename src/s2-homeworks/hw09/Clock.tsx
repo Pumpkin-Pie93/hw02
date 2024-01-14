@@ -49,7 +49,7 @@ function Clock() {
         <br/> // часы24:минуты:секунды (01:02:03)/(23:02:03)/(24:00:00)/(00:00:01) // пишут студенты
     const stringDate = `${dateCorrector(date.getDate())}.${dateCorrector(date.getMonth() + 1)}.${dateCorrector(date.getFullYear())}` ||
         <br/> // день.месяц.год (01.02.2022) // пишут студенты, варианты 01.02.0123/01.02.-123/01.02.12345 не рассматриваем
-    console.log(stringDate)
+    // console.log(stringDate)
     // день недели на английском, месяц на английском (https://learn.javascript.ru/intl#intl-datetimeformat)
     // const stringDay = date.getDay() ||  <br/> // пишут студенты 'date->day'
     type WeekType = {
@@ -62,7 +62,7 @@ function Clock() {
         4: 'Thursday',
         5: 'Friday',
         6: 'Saturday',
-        7: 'Sunday'
+        0: 'Sunday'
     }
     const MonthName:WeekType = {
         0:'January',
@@ -79,6 +79,7 @@ function Clock() {
         11:'December '
     }
     const stringDay = weeks[date.getDay()] || <br/> // пишут студенты 'date->day'
+    console.log(weeks[date.getDay()])
     const stringMonth = MonthName[(date.getMonth())] || <br/> // пишут студенты 'date->month'
     return (
         <div className={s.clock}>

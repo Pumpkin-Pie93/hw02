@@ -1,3 +1,121 @@
 .loader {
     /*свг и/или анимация*/
+    border: 2px solid violet;
+    border-radius: 50%;
+    border-bottom: 6px dotted #cc20cc;
+    width: 56px;
+    height: 56px;
+    animation: animateC 2s linear infinite;
 }
+
+.block {
+    height: 108px;
+    margin-top: 0;
+    padding: 0;
+    margin-bottom: 204px;
+    /*border:5px solid orange;*/
+}
+
+@keyframes animateC
+{
+    0%
+    {
+        transform:rotate(0deg);
+    }
+    100%
+    {
+        transform:rotate(360deg);
+    }
+}
+@keyframes animate
+{
+    0%
+    {
+        transform:rotate(45deg);
+    }
+    100%
+    {
+        transform:rotate(405deg);
+    }
+}
+/*.loader*/
+/*{*/
+/*    position:absolute;*/
+/*    top:50%;*/
+/*    left:50%;*/
+/*    transform:translate(-50%,-50%);*/
+/*    width:150px;*/
+/*    height:150px;*/
+/*    background:transparent;*/
+/*    border:3px solid #e5faf5;*/
+/*    border-radius:50%;*/
+/*    text-align:center;*/
+/*    line-height:150px;*/
+/*    font-family:sans-serif;*/
+/*    font-size:20px;*/
+/*    color:#fff000;*/
+/*    letter-spacing:4px;*/
+/*    text-transform:uppercase;*/
+/*    text-shadow:0 0 10px #fff000;*/
+/*    box-shadow:0 0 20px rgba(190, 186, 186, 0.5);*/
+/*}*/
+/*.loader:before*/
+/*{*/
+/*    content:'';*/
+/*    position:absolute;*/
+/*    top:-3px;*/
+/*    left:-3px;*/
+/*    width:100%;*/
+/*    height:100%;*/
+/*    border:3px solid transparent;*/
+/*    border-top:3px solid  #a5e1ec;*/
+/*    border-right:3px solid #a5e1ec;*/
+/*    border-radius:50%;*/
+/*    animation:animateC 2s linear infinite;*/
+/*}*/
+/*span*/
+/*{*/
+/*    display:block;*/
+/*    position:absolute;*/
+/*    top:calc(50% - 2px);*/
+/*    left:50%;*/
+/*    width:50%;*/
+/*    height:4px;*/
+/*    background:transparent;*/
+/*    transform-origin:left;*/
+/*    animation:animate 2s linear infinite;*/
+/*}*/
+/*span:before*/
+/*{*/
+/*    content:'';*/
+/*    position:absolute;*/
+/*    width:16px;*/
+/*    height:16px;*/
+/*    border-radius:50%;*/
+/*    background: #0095ff;*/
+/*    top:-6px;*/
+/*    right:-8px;*/
+/*    box-shadow:0 0 20px #00ff95;*/
+/*}*/
+/*@keyframes animateC*/
+/*{*/
+/*    0%*/
+/*    {*/
+/*        transform:rotate(0deg);*/
+/*    }*/
+/*    100%*/
+/*    {*/
+/*        transform:rotate(360deg);*/
+/*    }*/
+/*}*/
+/*@keyframes animate*/
+/*{*/
+/*    0%*/
+/*    {*/
+/*        transform:rotate(45deg);*/
+/*    }*/
+/*    100%*/
+/*    {*/
+/*        transform:rotate(405deg);*/
+/*    }*/
+/*}*/
