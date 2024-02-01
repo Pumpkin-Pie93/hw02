@@ -12,9 +12,16 @@
     line-height: normal;
 }
 
+.wrapper {
+    margin-top: 40px;
+    margin-bottom: 220px;
+}
+
 .select:focus {
+    outline-color: gray;
 }
 
 
 .option:hover {
+    color: #212A34;
 }
