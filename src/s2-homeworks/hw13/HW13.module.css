@@ -1,22 +1,52 @@
 .buttonsContainer {
+    width: fit-content;
+    outline: 1px solid red;
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    margin: 0 0 20px 0;
+}
+
+.buttonsContainer button{
+    margin-right: 20px;
+    margin-top: 0;
 }
 
 .responseContainer {
+    border: 1px solid #009dff;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 1022px;
+    height: 315px;
+    margin-left: 30px;
 }
 
 .imageContainer {
+    border: 1px solid #9b39bc;
+    max-height: 315px;
+    margin-right: 100px;
 }
 
 .image {
+    max-height: 315px;
+    border: 1px solid #e1b2f1;
+
 }
 
 .textContainer{
+    border: 1px solid #09ce31
 }
 
 .code {
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-bottom: 20px;
 }
 
 .text {
+    font-size: 1rem;
+    font-weight: normal;
 }
 .info {
 }
