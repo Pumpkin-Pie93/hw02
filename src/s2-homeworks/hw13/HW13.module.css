@@ -1,6 +1,6 @@
 .buttonsContainer {
     width: fit-content;
-    outline: 1px solid red;
+    /*outline: 1px solid red;*/
     display: flex;
     justify-content: flex-start;
     align-items: stretch;
@@ -13,29 +13,31 @@
 }
 
 .responseContainer {
-    border: 1px solid #009dff;
+    /*border: 1px solid #009dff;*/
     display: flex;
     justify-content: start;
     align-items: center;
-    width: 1022px;
+    max-width: 1022px;
     height: 315px;
     margin-left: 30px;
 }
 
 .imageContainer {
-    border: 1px solid #9b39bc;
+    /*border: 1px solid #9b39bc;*/
     max-height: 315px;
     margin-right: 100px;
 }
 
 .image {
     max-height: 315px;
-    border: 1px solid #e1b2f1;
+    /*border: 1px solid #e1b2f1;*/
 
 }
 
 .textContainer{
-    border: 1px solid #09ce31
+    /*border: 1px solid #09ce31;*/
+    max-width: 450px;
+
 }
 
 .code {
@@ -47,6 +49,9 @@
 .text {
     font-size: 1rem;
     font-weight: normal;
+    word-wrap: break-word;
 }
 .info {
+    margin: 0 380px;
+    font-size: 1.6rem;
 }
