@@ -20,6 +20,7 @@
     max-width: 1022px;
     height: 315px;
     margin-left: 30px;
+    margin-bottom: 70px;
 }
 
 .imageContainer {
@@ -52,6 +53,6 @@
     word-wrap: break-word;
 }
 .info {
-    margin: 0 380px;
-    font-size: 1.6rem;
+    /*margin: 0 380px;*/
+    font-size: 1rem;
 }
