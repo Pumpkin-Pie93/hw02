@@ -1,7 +1,20 @@
-.tech {
-
+.tech  {
+    /*margin-bottom: 100px;*/
+    color: #00cc22;
+}
+.tech  > *:last-child{
+    margin-bottom: 100px;
 }
 
 .loading {
-
+    display: flex;
+    justify-content: end;
+    color:  #4D4D4D;
+    /*border: 2px solid red;*/
+    width: 370px;
+    font-family: Roboto,sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 16px;
+    text-align: left;
 }
