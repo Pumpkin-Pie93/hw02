@@ -39,6 +39,8 @@ const HW12 = () => {
             </div>
 
             <div className={s2.hw}>
+                <div className={s.wrapper} style={{display:"flex", flexDirection:"column"}}>
+                <span>Выберите тему</span>
                 <SuperSelect
                     id={'hw12-select-theme'}
                     className={s.select}
@@ -46,6 +48,7 @@ const HW12 = () => {
                     onChangeOption={change}
                     options={themes}
                 />
+                </div>
             </div>
         </div>
     )

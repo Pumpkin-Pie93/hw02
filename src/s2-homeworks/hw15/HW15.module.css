@@ -1,27 +1,75 @@
 .tech {
-    width: 50vw;
+    width: 50%;
 }
 
 .developer {
-
+    width: 50%;
 }
 
 .techHeader {
-    width: 50vw;
+    width: 50%;
+display: flex;
+    justify-content: start;
+    align-items: center;
+    /*border: 2px solid #68008b;*/
+
 }
 
 .developerHeader {
-
+    /*border: 2px solid #006fff;*/
+    display: flex;
+    justify-content: start;
+    align-items: center;
 }
 
 .row {
+   border-bottom: 2px solid #E5E5E5;
+    width: 600px;
+    height: 24px;
+    margin: 5px;
     display: flex;
+    align-items: center;
 }
 
+
 .rowHeader {
+    /*position: relative;*/
+    /*border: 2px solid #184f00;*/
+    width: 606px;
+    height: 36px;
     display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 5px;
+    background-color: #E5E5E5;
 }
 
 .loading {
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    /*border: 2px solid fuchsia;*/
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 25%;
+    top: 50%;
+    transform: translate(-50%, -50%) translate(20px, 10px);
+    animation: rotate 1s linear infinite;
+}
+@keyframes rotate {
+    from {
+        transform: translate(-50%, -50%) translate(20px, 10px) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) translate(20px, 10px) rotate(360deg);
+    }
+}
 
+span > img {
+    display: flex;
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    margin-left: 5px;
+    margin-top: 5px;
 }

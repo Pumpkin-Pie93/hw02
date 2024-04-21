@@ -39,15 +39,14 @@ const SuperSelect: React.FC<SuperSelectPropsType> = ({
         // делают студенты
         let changeValue = Number(e.currentTarget.value)
         if(changeValue) {
-            onChangeOption?.(changeValue)
+          onChangeOption?.(changeValue)
         }
     }
 
     const finalSelectClassName = s.select + (className ? ' ' + className : '')
 
     return (
-        <div className={s.wrapper} style={{display:"flex", flexDirection:"column"}}>
-            <span>Выберите тему</span>
+       
             <select
                 className={finalSelectClassName}
                 onChange={onChangeCallback}
@@ -55,7 +54,6 @@ const SuperSelect: React.FC<SuperSelectPropsType> = ({
             >
                 {mappedOptions}
             </select>
-        </div>
     )
 }
 

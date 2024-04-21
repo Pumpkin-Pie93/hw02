@@ -1,7 +1,8 @@
-import React from 'react'
+import React, {ChangeEvent} from 'react'
 import SuperSelect from '../../../hw07/common/c5-SuperSelect/SuperSelect'
 import {Pagination} from '@mui/material'
 import s from './SuperPagination.module.css'
+import {selectOptions} from "@testing-library/user-event/dist/select-options";
 
 export type SuperPaginationPropsType = {
     id?: string
@@ -13,17 +14,18 @@ export type SuperPaginationPropsType = {
 
 const SuperPagination: React.FC<SuperPaginationPropsType> = (
     {
-        page, itemsCountForPage, totalCount, onChange, id = 'hw15',
+        page, itemsCountForPage, totalCount, onChange, id  = 'hw15',
     }
 ) => {
-    const lastPage = 10 // пишет студент // вычислить количество страниц
+    const lastPage = Math.ceil(totalCount/itemsCountForPage) // пишет студент // вычислить количество страниц
 
     const onChangeCallback = (event: any, page: number) => {
         // пишет студент
+        onChange(page,itemsCountForPage)
     }
 
-    const onChangeSelect = (event: any) => {
-        // пишет студент
+    const onChangeSelect = (changeValue: number) => {
+        onChange(page,changeValue)
     }
 
     return (
@@ -31,6 +33,16 @@ const SuperPagination: React.FC<SuperPaginationPropsType> = (
             <Pagination
                 id={id + '-pagination'}
                 sx={{
+                    button:
+                        {
+                            borderRadius: '6px',
+                            backgroundColor:'blue',
+                            color:'ghostwhite',
+                            marginBottom:'10px',
+                            "&:hover":{color:'blue',backgroundColor: '#f5f5f5'},
+                            "&:focus":{color:'darkblue'}
+                        }
+                        
                     // стили для Pagination // пишет студент
                 }}
                 page={page}
@@ -52,10 +64,10 @@ const SuperPagination: React.FC<SuperPaginationPropsType> = (
                     {id: 7, value: 7},
                     {id: 10, value: 10},
                 ]}
-                onChange={onChangeSelect}
+                onChangeOption={onChangeSelect}
             />
 
-            <span className={s.text2}>
+            <span className={s.text2} >
                 строк в таблице
             </span>
         </div>
